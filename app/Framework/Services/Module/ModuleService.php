@@ -31,4 +31,12 @@ class ModuleService implements ModuleServiceInterface
     {
         return $this->modules;
     }
+
+    /**
+     * @inheritDoc
+     */
+    public function panels(): Collection
+    {
+        return $this->loaded()->flatMap(fn(Module $module) => $module->getPanels());
+    }
 }

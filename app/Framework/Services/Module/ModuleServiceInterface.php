@@ -20,4 +20,11 @@ interface ModuleServiceInterface
      * @return Collection
      */
     public function loaded(): Collection;
+
+    /**
+     * Get all panels across all modules.
+     *
+     * @return Collection
+     */
+    public function panels(): Collection;
 }
