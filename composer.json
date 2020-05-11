@@ -63,7 +63,7 @@
     "repositories": [
         {
             "type": "path",
-            "url": "../TestModule"
+            "url": "../Platform-TestModule"
         }
     ]
 }
