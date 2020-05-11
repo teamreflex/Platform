@@ -35,6 +35,10 @@
                             </li>
                         @endforeach
                     </ul>
+
+                    @if (! $loop->last)
+                        <hr class="my-3">
+                    @endif
                 @endforeach
 
 {{--                <!-- Nav items -->--}}
